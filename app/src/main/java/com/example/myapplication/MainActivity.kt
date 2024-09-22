@@ -8,10 +8,10 @@ abstract class StoreKeeper {
 }
 
 open class JuniorStoreKeeper : StoreKeeper() {
-    // Сортировка пузырьком
      override fun sort() {
          bubbleSort()
     }
+    // Сортировка пузырьком
     private fun bubbleSort() {
         // Решила измерить время в наносекундах, так как в мс недостаточная точность для маленького массива
         val start = System.nanoTime()
